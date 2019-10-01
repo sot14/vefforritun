@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  main {
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  p {
+      font-size: 1em;
+      line-height: 1.25em;
+  }
+
+  .cards {
+      display: flex;
+      justify-content: space-evenly; /*þarf að útfæra meira?*/
+      align-items: space-evenly;
+      flex-wrap: wrap;
+  }
+
+  .card {
+      background-color: #fff;
+      border: 2px solid #aaa;
+      border-radius: 5px;
+      max-width: 470px;   /* 29.375em?*/
+      max-height: 20em;
+      margin-bottom: 10px;
+      display: flex;
+      overflow: auto;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      align-content: space-evenly;    /*allt í einu virkaði .last order=-1 eftir þetta*/
+      justify-content: flex-start;
+      flex: 1 0 100;
+      
+  }
+
+  .card img {
+      /*skal taka 150px vinstra megin við efni*/
+      padding-right: 20px;
+      width: 100px;
+      height: 60px;
+      display: flex;
+  }
+
+  .last {
+      order: -1;
+  }
